@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex07</title>
+</head>
+<body>
+<script>
+    while (true) {
+        let count = parseInt(prompt("moi nhap vao so dien ho gia dinh tieu thu :"));
+        let payment = 0;
+        if (count <= 50) {
+            payment = count * 1678;
+        } else if (count <= 100) {
+            payment = (count - 50) * 1734 + 50 * 1678;
+        } else if (count <= 200) {
+            payment = (count - 100) * 2014 + 50 * (1678 + 1734);
+        } else if (count <= 300) {
+            payment = (count - 200) * 2536 + 100 * 2014 + 50 * (1678 + 1734);
+        } else if (count <= 400) {
+            payment = (count - 300) * 2834 + 100 * (2356 + 2014) + 50 * (1678 + 1734);
+        } else {
+            payment = (count - 400) * 2927 + 100 * (2834 + 2356 + 2014) + 50 * (1678 + 1734);
+        }
+        alert("tien dien thang nay la: " + payment);
+    }
+</script>
+</body>
+</html>

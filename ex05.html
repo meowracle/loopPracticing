@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex05</title>
+</head>
+<body>
+<script>
+    let a=parseFloat(prompt("moi nhap vao diem kiem tra mieng: "));
+    let b=parseFloat(prompt("moi nhap vao diem kiem tra 15p: "));
+    let c=parseFloat(prompt("moi nhap vao diem kiem tra giua ky: "));
+    let d=parseFloat(prompt("moi nhap vao diem kiem tra cuoi ky: "));
+    let average=parseFloat(a+b+c*2+d*3)/7;
+    if (average>=8) {
+        alert("hoc sinh xep loai hoc luc Gioi, xin chuc mung!");
+    } else if (average>=6.5) {
+        alert("hoc sinh xep loai hoc luc Kha, co gang hon nhe!");
+    } else if (average>=5) {
+        alert("hoc sinh xep loai hoc luc Trung binh, can co gang nhieu nhe!");
+    } else if (average>=3.5) {
+        alert("hoc sinh xep loai hoc luc Yeu, hoc hanh can than, luu ban den noi roi");
+    } else {
+        alert("hoc sinh xep loai hoc luc Kem, het thuoc chua :'<");
+    }
+</script>
+</body>
+</html>

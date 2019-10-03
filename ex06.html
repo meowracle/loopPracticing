@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex06</title>
+</head>
+<body>
+<script>
+    let income=parseInt(prompt("moi nhan vien nhap vao doanh so thang nay nhe: "));
+    let bonus;
+    if (income==0){
+        alert("luoi lam the nay, sa thai thoi");
+    } else if (income<=2000000) {
+        bonus = income*5/100;
+        alert("hoa hong thang nay cua nhan vien la: "+bonus);
+    } else if (income<=5000000) {
+        bonus = income*10/100;
+        alert("hoa hong thang nay cua nhan vien la: "+bonus);
+    } else if (income<=10000000) {
+        bonus = income*15/100;
+        alert("hoa hong thang nay cua nhan vien la: "+bonus);
+    } else {
+        bonus = income*20/100;
+        alert("hoa hong thang nay cua nhan vien la: "+bonus);
+    }
+</script>
+</body>
+</html>
